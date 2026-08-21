@@ -35,5 +35,14 @@ func main(){
 	fmt.Printf("\n 3 pow 3 return %v \n",tourteaching.IfStatement_1(3,3,20))
 
 	tourteaching.MakeSqure(1,10)
+
+	tourteaching.SwitchStatement_1()
+	tourteaching.SwtichStatement_2()
+	tourteaching.SwitchStatement_3()
+	tourteaching.DeferEvaluated()
+	tourteaching.DeferStack()
+	tourteaching.DeferStackClosure()
+	tourteaching.F()
+	fmt.Println("Returned normally from f.")
 }
 
