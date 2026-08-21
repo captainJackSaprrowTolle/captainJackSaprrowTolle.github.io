@@ -4,6 +4,7 @@ go 1.26.6
 
 require (
 	example.com/greetings v0.0.0
+	example.com/tour_teaching v0.0.0
 	rsc.io/quote v1.5.2
 )
 
@@ -13,3 +14,5 @@ require (
 )
 
 replace example.com/greetings => ../greetings
+
+replace example.com/tour_teaching => ../tour_teaching
