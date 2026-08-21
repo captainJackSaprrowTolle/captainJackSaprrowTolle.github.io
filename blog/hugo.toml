@@ -34,10 +34,16 @@ buildExpired = false
   weight = 20
 
 [[menu.main]]
+  identifier = 'dart'
+  name = 'Dart'
+  url = '/dart/'
+  weight = 30
+
+[[menu.main]]
   identifier = 'tags'
   name = 'Tags'
   url = '/tags/'
-  weight = 30
+  weight = 40
 
 [markup]
   [markup.highlight]
