@@ -3,6 +3,9 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches: ['main']
+    paths:
+      - 'blog/**'
+      - '.github/workflows/hugo.yml'
   workflow_dispatch:
 
 permissions:
@@ -37,6 +40,7 @@ jobs:
         id: pages
         uses: actions/configure-pages@v5
       - name: Build with Hugo
+        working-directory: ./blog
         env:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
@@ -47,7 +51,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./public
+          path: ./blog/public
 
   deploy:
     environment:
