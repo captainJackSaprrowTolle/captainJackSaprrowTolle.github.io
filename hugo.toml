@@ -1,0 +1,44 @@
+baseURL = 'https://captainjacksaprrowtolle.github.io/'
+locale = 'zh-cn'
+title = "Tolle's Learning Log"
+theme = 'PaperMod'
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  env = 'production'
+  defaultTheme = 'auto'
+  ShowShareButtons = false
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+
+[[menu.main]]
+  identifier = 'go'
+  name = 'Go'
+  url = '/go/'
+  weight = 10
+
+[[menu.main]]
+  identifier = 'flutter'
+  name = 'Flutter'
+  url = '/flutter/'
+  weight = 20
+
+[[menu.main]]
+  identifier = 'tags'
+  name = 'Tags'
+  url = '/tags/'
+  weight = 30
+
+[markup]
+  [markup.highlight]
+    noClasses = false
