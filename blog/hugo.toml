@@ -40,10 +40,16 @@ buildExpired = false
   weight = 30
 
 [[menu.main]]
+  identifier = 'agentic-workflow'
+  name = 'Agentic Workflow'
+  url = '/agentic-workflow/'
+  weight = 40
+
+[[menu.main]]
   identifier = 'tags'
   name = 'Tags'
   url = '/tags/'
-  weight = 40
+  weight = 50
 
 [markup]
   [markup.highlight]

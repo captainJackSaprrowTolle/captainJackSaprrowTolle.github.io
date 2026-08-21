@@ -4,7 +4,6 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:http/http.dart' as http;
-import '../model/search_results.dart';
 import '../model/summary.dart';
 
 Future<Summary> getRandomArticleSummary() async {
